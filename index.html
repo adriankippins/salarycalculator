@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guyana Salary Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<div id="bd">
+    <body>
+
+    <div id="app">
+    <h3 id="appname">Guyana Salary Calculator</h3>
+
+    <form>
+        <label>Hourly Rate</label>
+        <input type="text" id="hr" placeholder="Enter your hourly rate">
+
+        <label>Monthly Hours Worked</label>
+        <input type="text" id="hw" placeholder="Enter Your Hours Worked">
+        
+        <p>Please note this is and estimated calculation and actual values may vary slightly.</p>
+        </br>
+        
+        <label>Gross Pay</label>
+        <input type="text" id="gp">
+        
+        <label>NIS Deducted</label>
+        <input type="text" id="nis">
+        
+        <label>Taxes Deducted</label>
+        <input type="text" id="tax">
+        
+        <label>Total Deductions</label>
+        <input type="text" id="td">
+        
+        <label>Net Pay</label>
+        <input type="text" id="net">
+        </br>
+        </br>
+    
+        <button type="button" class="button" onclick="salaryCalc()">Calculate</button>
+    </form>
+    </div>
+
+    <script src="scripts/task6.js"></script>
+
+    </body>
+</div>
+</html>
