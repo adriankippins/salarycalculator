@@ -54,7 +54,7 @@ function PAYE(z) {
     } else if (z > 225000) {
         nontax = z / 3;
         
-        if ((z - nontax + nis) < 0) {
+        if ((z - nontax + nis) <= 0) {
             taxable = 0;
          
         } else {
@@ -75,7 +75,7 @@ function PAYE(z) {
             tax40 = (taxable - 150000) * 0.40;
 
         } else {
-            tax40 = tax40;
+            tax40 = 0;
         }
 
         totalTax = tax28 + tax40;
